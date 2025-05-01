@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Animada</title>
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- GSAP core -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <!-- ScrollTrigger plugin -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis para smooth scroll -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@0.2.23/bundled/lenis.min.js"></script>
+</head>
+<body>
+  <!-- Encabezado / Hero -->
+  <header class="hero">
+    <nav class="navbar">
+      <a href="#" class="logo">Mi Logo</a>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#features">¿Por qué elegirnos?</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+    <div class="hero-content">
+      <h1>Bienvenido a Mi Landing Page</h1>
+      <p>Una breve descripción de tu producto o servicio.</p>
+      <a href="#" class="btn">¡Comenzar!</a>
+    </div>
+  </header>
+
+<!-- ¿Por qué elegirnos? -->
+<section id="features" class="features">
+  <h2 class="features-title">¿Por qué elegirnos?</h2>
+  <div class="feature-cards">
+    <div class="feature-card">
+      <div class="icon">🚀</div>
+      <h3>Desempeño Superior</h3>
+      <p>Optimizado para ofrecer velocidad y eficiencia.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🤝</div>
+      <h3>Confianza</h3>
+      <p>Clientes satisfechos en todo el mundo.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">📈</div>
+      <h3>Crecimiento Garantizado</h3>
+      <p>Herramientas que impulsan tus resultados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+<section id="testimonials" class="testimonials">
+  <h2 class="testimonials-title">Testimonios</h2>
+  <div class="testimonials-wrapper">
+    <button class="testimonial-arrow prev" aria-label="Anterior">‹</button>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <p>"Una solución fantástica para nuestro equipo técnico."</p>
+        <h4>— Ana Torres</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Desde que lo usamos, aumentamos ventas un 40%."</p>
+        <h4>— Carlos Méndez</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Lo recomendaría sin dudar a cualquier empresa."</p>
+        <h4>— Lucia Ramírez</h4>
+      </div>
+    </div>
+    <button class="testimonial-arrow next" aria-label="Siguiente">›</button>
+  </div>
+</section>
+
+<!-- Preguntas Frecuentes -->
+<section id="faq" class="faq">
+  <h2 class="faq-title">Preguntas Frecuentes</h2>
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">
+      ¿Qué incluye el servicio?<span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      <p>Incluye soporte técnico, acceso completo y actualizaciones constantes.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">
+      ¿Cómo me comunico con soporte?<span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      <p>Podés contactarnos vía email o chat 24/7 en nuestra plataforma.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">
+      ¿Es posible hacer upgrades?<span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      <p>Sí, podés actualizar tu plan en cualquier momento desde tu cuenta.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Script principal -->
+  <script defer src="script.js"></script>
+</body>
+</html>
